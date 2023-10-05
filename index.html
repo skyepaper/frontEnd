@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+    </script>  
+    <script>
+        $(document).ready(function() {  
+
+            $(".btn.backView").click(function(){
+                let value = $(this).text()
+                $('.back').css("opacity",'.'+value);
+            })
+            $(".btn.allView").click(function(){
+                let value = $(this).text()
+                $('.all').css("opacity",'.'+value);
+            })
+        })
+    </script>
+</head>
+<style>
+    body{
+        height:100%;
+        margin:0;
+        background-color: rgb(148, 148, 194);
+    }
+    .back{
+        position: absolute;
+        width:100%;
+        opacity:.2;
+    }
+    .all{
+        opacity:.9;
+    }
+    .actions{
+        background-color: pink;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+    }
+    .shell{
+        width:800px;
+        margin:auto;
+        padding:0 50px;
+        background-color: rgb(77, 77, 139);
+    }
+    .inside{
+        position: relative;
+        height:200px;
+    }
+    img{
+        width:100%;
+    }
+    .imgBox{
+        overflow: hidden;
+        height:100%;
+        position: absolute;
+    }
+    .boxText{
+        position: relative;
+        top: 50px;
+        left: 0;
+        background-color: blue;
+        margin-right: 50px;
+        padding:10px 20px;
+    }
+    button{
+        display: block;
+    }
+    .btn:hover{
+        opacity:.8;
+    }
+    .red{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="actions">
+        <div>
+            back
+            <button class="btn backView">0</button>
+            <button class="btn backView">10</button>
+            <button class="btn backView">25</button>
+            <button class="btn backView">50</button>
+            <button class="btn backView">75</button>
+            <button class="btn backView">99</button>
+        </div>
+        <div>
+            all
+            <button class="btn allView">0</button>
+            <button class="btn allView">10</button>
+            <button class="btn allView">25</button>
+            <button class="btn allView">50</button>
+            <button class="btn allView">75</button>
+            <button class="btn allView">99</button>
+        </div>
+    </div>
+    <div class="back">
+        <img src="figma.jpg" alt="">
+    </div>
+    <div class="all">
+
+
+        <section>
+            <div class="shell">
+                <div class="inside">
+                    <div class="imgBox">
+                        <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    
+                    <div class="boxText">
+                        asd
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="shell">
+                <div class="inside">
+                    <div class="imgBox">
+                        <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    
+                    <div class="boxText">
+                        asd
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="shell">
+                <div class="inside">
+                    <div class="imgBox">
+                        <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    
+                    <div class="boxText">
+                        asd
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="shell">
+                <div class="inside">
+                    <div class="imgBox">
+                        <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    
+                    <div class="boxText">
+                        https://verdemedia.com/blog/5-excellent-examples-mobile-web-design/
+                        
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
